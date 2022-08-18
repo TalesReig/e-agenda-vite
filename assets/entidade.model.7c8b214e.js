@@ -1,0 +1,1 @@
+var d=Object.defineProperty;var i=(r,o,s)=>o in r?d(r,o,{enumerable:!0,configurable:!0,writable:!0,value:s}):r[o]=s;var a=(r,o,s)=>(i(r,typeof o!="symbol"?o+"":o,s),s);import{G as t}from"./guid.model.16afb711.js";class n{constructor(){a(this,"id");this.id=new t().gerarNovoId()}}export{n as E};
