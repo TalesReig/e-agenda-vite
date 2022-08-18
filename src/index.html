@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="/public/vite.svg" type="icon/svg">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./index.ts" defer></script>
+
+  <title>E-Agenda Web</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-black">
+      <div class="container p-2">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-light" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold fs-5">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cadastros
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./tarefas/tarefa.list.html">Tarefas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./contatos/contato.list.html">Contatos</a></li>
+                <li><a class="dropdown-item" href="#">Compromissos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a class="navbar-brand" href="index.html">
+            eAgenda
+            <span class="badge bg-warning text-bg-light">Web</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <section id="introducao">
+      <div class="text-center text-md-start">
+        <div class="row-cols-1 row-cols-md-2 d-flex flex-wrap-reverse align-items-center">
+          
+          <div class="col mt-4 mt-md-0">
+            <header>
+              <h1 class="fw-bolder">Olá, seja bem-vindo(a)!</h1>
+              <h2 class="text-warning fs-3">A aplicação web da eAgenda está aqui!</h2>
+              <hr>
+            </header>
+            <article>
+              <p class="fs-5">Nossa aplicação oferece simplicidade na hora de gerenciar suas tarefas e os compromissos com seus contatos.</p>
+              <p class="fs-5">Que tal começar cadastrando uma nova tarefa?</p>
+              <a href="/src/tarefas/tarefa.create.html" id="btnCadastrar" class="btn btn-lg btn-warning">Cadastro de Tarefas</a>
+            </article>
+          </div>
+
+          <div class="col no-select">
+            <img src="/public/assets/banner.svg" class="drop-shadow w-75">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- <footer class="fixed-bottom bg-black">
+
+  </footer> -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li><a href="https://github.com/TalesReig" target="_blank"><img src="/public/assets/icons8-github-30.png" class="me-md-4" width="30px" height="30px"></a></li>
+      <li><a href="https://www.instagram.com/talesreig/" target="_blank"><img src="/public/assets/icons8-instagram-30.png" class="me-md-4" width="30px" height="30px"></a></li>
+    </ul>
+  </footer>
+</body>
+</html>
